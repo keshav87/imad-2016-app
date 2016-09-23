@@ -42,7 +42,9 @@ background: linear-gradient(to bottom right,white,#bcbdc4);height:4000px;}
 	height:55px;
 	width:200px;
 }
-
+#main-text{
+    	top:200px;
+}
 .submit1{
 	left:1100px;
 	top:39px;
