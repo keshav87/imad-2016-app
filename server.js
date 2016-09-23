@@ -18,31 +18,31 @@ app.get('/ui/madi.png', function (req, res) {
 });
 
 
-var name1=document.getElementById("name").value;
-var password= document.getElementById("password").value;
+// var name1=document.getElementById("name").value;
+// var password= document.getElementById("password").value;
 
 
-$.ajax({
-      type:"GET",
-      url:"http://hostname/projectfolder/webservicename.php?callback=jsondata&web_name="+name+"&web_address="+password,
-      crossDomain:true,
-      dataType:'jsonp',
-      success: function jsondata(data)
-           {
+// $.ajax({
+//       type:"GET",
+//       url:"http://hostname/projectfolder/webservicename.php?callback=jsondata&web_name="+name+"&web_address="+password,
+//       crossDomain:true,
+//       dataType:'jsonp',
+//       success: function jsondata(data)
+//           {
 
-            var parsedata=JSON.parse(JSON.stringify(data));
-            var logindata=parsedata["Status"];
+//             var parsedata=JSON.parse(JSON.stringify(data));
+//             var logindata=parsedata["Status"];
 
-            if("sucess"==logindata)
-            {   
-                alert("success");
-            }
-            else
-            {
-                alert("failed");
-            }
-          }  
-    }); 
+//             if("sucess"==logindata)
+//             {   
+//                 alert("success");
+//             }
+//             else
+//             {
+//                 alert("failed");
+//             }
+//           }  
+//     }); 
 
 
 
