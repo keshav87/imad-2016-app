@@ -19,12 +19,12 @@ app.get('/ui/madi.png', function (req, res) {
 
 
 var name1=document.getElementById("name").value;
-var address= document.getElementById("password").value;
+var password= document.getElementById("password").value;
 
 
 $.ajax({
       type:"GET",
-      url:"http://hostname/projectfolder/webservicename.php?callback=jsondata&web_name="+name+"&web_address="+address+"&web_age="+age,
+      url:"http://hostname/projectfolder/webservicename.php?callback=jsondata&web_name="+name+"&web_address="+password,
       crossDomain:true,
       dataType:'jsonp',
       success: function jsondata(data)
