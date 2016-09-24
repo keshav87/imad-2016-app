@@ -15,7 +15,7 @@
 //     //img1.style.marginLeft='100px';
 // };
 
-var button=document.getElementById('counter');
+var button = document.getElementById('counter');
 var counter=0;
 button.onclick = function()
 {
