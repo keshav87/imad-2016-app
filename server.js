@@ -13,37 +13,9 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
-app.get('/ui/madi.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
-});
-
-
-// var name1=document.getElementById("name").value;
-// var password= document.getElementById("password").value;
-
-
-// $.ajax({
-//       type:"GET",
-//       url:"http://hostname/projectfolder/webservicename.php?callback=jsondata&web_name="+name+"&web_address="+password,
-//       crossDomain:true,
-//       dataType:'jsonp',
-//       success: function jsondata(data)
-//           {
-
-//             var parsedata=JSON.parse(JSON.stringify(data));
-//             var logindata=parsedata["Status"];
-
-//             if("sucess"==logindata)
-//             {   
-//                 alert("success");
-//             }
-//             else
-//             {
-//                 alert("failed");
-//             }
-//           }  
-//     }); 
-
+// app.get('/ui/madi.png', function (req, res) {
+//   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
+// });
 
 
 var counter=0;
@@ -52,6 +24,7 @@ app.get('/counter',function(req,res)
     counter=counter+1;
     res.send(counter.toString());
 });
+
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
