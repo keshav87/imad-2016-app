@@ -19,6 +19,9 @@ var button = document.getElementById('counter');
 var counter=0;
 button.onclick = function()
 {
+// make a request to the end pointer counter
+    var request = new XMLHttpRequest();
+    //capture the request and store it in a variacle
     //render the variable in the correct span
     counter = counter+1;
     var span = document.getElementById('count');
