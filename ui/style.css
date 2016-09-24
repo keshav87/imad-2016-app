@@ -27,7 +27,7 @@ background: linear-gradient(to bottom right,white,#bcbdc4);height:4000px;}
 	width:100%;
 	height:100px;
 	background:#142170;
-	top:500;
+	top:600;
 	left:0;
 	color:white;
 	z-index:7;
@@ -103,6 +103,15 @@ background: linear-gradient(to bottom right,white,#bcbdc4);height:4000px;}
 }
 #intro3{
 	top:180px;
+	left:700px;
+	font-family:verdana;
+	font-size:20px;
+	color:#142170;
+	height:50px;
+	width:300px;
+}
+#intro4{
+	top:220px;
 	left:700px;
 	font-family:verdana;
 	font-size:20px;
